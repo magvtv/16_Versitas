@@ -6,12 +6,49 @@
 
 --- # LANDING PAGE
 Home:
-  - About
-  - Admissions
-  - Academics
-  - Research
-  - Student life
-  - News
+  About:
+    - About JKUAT
+    - Tution & Aid
+    - Leadership
+    - Purpose, Mission, Values
+    - Faculty Awards & Honors
+    - Diversity & Inclusion
+
+  Admissions:
+    - Admissions overview
+    - First-Year
+    - Transfer
+    - Graduate
+    - International
+    - Online
+    - Returning 
+    - Non-degree seeking
+
+  Academics:
+    - Undergrad Majors
+    - Graduate Programs
+    - Colleges & Schools
+    - Resources
+    - International Engagement
+    - Library
+
+  Research:
+    - Innovation & Impact
+    - Corporate Engagement
+    - Centers
+    - Resources for Researchers
+    - Research Opportunities for Students
+    - Environment & Sustainability
+
+  Student Life:
+    - Living on Campus
+    - Getting Involved
+    - Amenities
+    - Spirits & Traditions
+    - Academic Experience
+    - Student Stories
+
+  News:
 
 
 --- # FEATURES
@@ -32,14 +69,16 @@ Features to add:
 
       Alumni [supporting JKUAT for life]:
         - JKUAT Loyal
-        - upcoming events
+        - JKUAT Alumni
         - celebrate JKUAT
         - stay connected
         - benefits and services []
         - career lab [mentorship]
 
       Donor:
-        - fuel wonder [ join in pushing possibilities further]
+        - Fuel Wonder [ join in pushing possibilities further]
+        - Support JKUAT
+        - Give Today
 
       Business & Partners:
         - corporate engagement []
