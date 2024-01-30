@@ -1,0 +1,45 @@
+# practising using this file format
+# want to make an overview of the web pages for given uni web app
+# starting out with basics then integrate other new features later
+# filtering out the features factoring in novelity
+
+
+--- # LANDING PAGE
+Home:
+  - About
+  - Admissions
+  - Academics
+  - Research
+  - Student life
+  - News
+
+
+--- # FEATURES
+Features to add:
+--- # PLATFORM USERS
+      Future Student:
+        
+      Current Student:
+        - Schools
+        - Campus: 
+          - Involvement
+          - Getting around
+
+        
+      Faculty & Staff Member:
+        - 
+      Parent:
+
+      Alumni [supporting JKUAT for life]:
+        - JKUAT Loyal
+        - upcoming events
+        - celebrate JKUAT
+        - stay connected
+        - benefits and services []
+        - career lab [mentorship]
+
+      Donor:
+        - fuel wonder [ join in pushing possibilities further]
+
+      Business & Partners:
+        - corporate engagement []
