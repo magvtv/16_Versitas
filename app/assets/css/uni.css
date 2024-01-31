@@ -322,25 +322,18 @@ span.dot-icon {
 .news__tiles {
   display: flex;
   overflow-x: auto;
-  /* border: 2px solid green; */
-	/* margin-top: 20px; */
-	/* padding: 20px; */
-	/* max-width: 100%; */
-	/* margin-bottom: 20px; */
+
 }
-
-
 
 .news__sidebar {
   overflow: hidden;
-	width: 20vw;
+	width: 10vw;
   height: 35px;
   max-width: 150px;
-  margin: 60px -30px 0 0;
+  margin: 55px -30px 0 0;
   display: flex;
   border-radius: 5px;
   padding: 5px;
-	justify-content: space-evenly;
   place-items: center;
 	transform: rotate(90deg);
 }
@@ -351,36 +344,41 @@ span.dot-icon {
 	text-transform: uppercase;
 }
 .news__sidebar-count {
-  flex-direction: row;
+  margin-left: 20px;
+  /* flex-direction: row; */
 	/* margin-left: 2rem; */
 }
 
 
 .news__section {
-  position: relative;
-  width: 100%;
+  width: 90vw;
   display: flex;
   /* justify-content: space-evenly; */
   /* align-items: center; */
   border: 1px solid cadetblue;
-  padding: 20px;
 }
 
 
 .news__block {
-	display: flex;
-	/* border: 1px solid goldenrod; */
+  flex-direction: row;
+  position: relative;
+	/* display: flex; */
+  max-width: 400px;
+	border: 1px solid goldenrod;
 	width: 100%;
-   overflow-x: auto;
 	padding: 20px;
-	margin-left: 20px;
 	cursor: pointer;
 	justify-content: center;
 	flex-direction: row;
+  transition: transform 0.5s;
+}
+
+.news__block:hover {
+  transform: scale(0.95);
 }
 
 .news__block-name {
-	width: 100%;
+	width: 22vw;
 	justify-content: center;
 	font-size: 25px;
 	font-weight: bold;
@@ -390,7 +388,7 @@ span.dot-icon {
 
 .block__caption {
   /* margin-left: 2rem; */
-	max-width: 100%;
+	width: 78vw;
 	padding: 5px;
 	border: 1px solid blueviolet;
 	display: flex;
