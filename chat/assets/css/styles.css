@@ -17,16 +17,18 @@ body {
 	top: 1.25rem;
 	left: 1.25rem;
 	bottom: 1.25rem;
-	width: 12rem;
+	width: 15rem;
 	border-radius: 0.625rem;
-	border-left: 0.3125rem solid green;
+	/* border-left: 0.3125rem solid green; */
 	box-sizing: initial;
-	background: cyan;
+	background: rgb(109, 114, 114);
 	transition: width 0.5s;
 }
 
 .navbar ul {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -39,43 +41,44 @@ body {
 	list-style: none;
 	width: 100%;
 	border-top-left-radius: 1.25rem;
+	border-bottom-left-radius: 1.25rem;
 }
 
-.navbar ul li.active {
-	background: honeydew;
+.navbar ul li.active:hover {
+	background: blanchedalmond;
 }
 
 .navbar ul li a {
 	position: relative;
-	display: block;
+	display: flex;
 	width: 100%;
 	text-decoration: none;
 	color: white;
+	text-transform: capitalize;
 }
 
-.navbar ul li.active a {
+.navbar ul li.active a:hover {
 	color: chocolate;
 }
 
-.navbar ul li a .icon {
+.navbar ul li a span.icon {
 	position: relative;
-	display: block;
 	min-width: 3.5rem;
 	height: 3.5rem;
-	line-height: 3.5rem;
-	place-items: center;
-}
-
-.navbar ul li a .icon ion-icon {
-	font-style: 1.25rem;
-}
-
-.navbar ul li a .title {
-	position: relative;
-	display: block;
+	line-height: 4rem;
 	padding-left: 0.625rem;
+	place-items: center center;
+}
+
+.navbar ul li a span.icon ion-icon {
+	font-size: 1.25rem;
+}
+
+.navbar ul li a span.title {
+	position: relative;
+	padding-left: 0.125rem;
 	height: 3.5rem;
-	line-height: 3.5rem;
+	line-height: 3.25rem;
 	text-align: center;
 	white-space: normal;
 }
