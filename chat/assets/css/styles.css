@@ -1,0 +1,81 @@
+/* to add the root styles later on */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inconsolata', monospace;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.navbar {
+	position: fixed;
+	top: 1.25rem;
+	left: 1.25rem;
+	bottom: 1.25rem;
+	width: 12rem;
+	border-radius: 0.625rem;
+	border-left: 0.3125rem solid green;
+	box-sizing: initial;
+	background: cyan;
+	transition: width 0.5s;
+}
+
+.navbar ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 0.625rem;
+	padding-top: 2.5rem;
+}
+
+.navbar ul li {
+	position: relative;
+	list-style: none;
+	width: 100%;
+	border-top-left-radius: 1.25rem;
+}
+
+.navbar ul li.active {
+	background: honeydew;
+}
+
+.navbar ul li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+.navbar ul li.active a {
+	color: chocolate;
+}
+
+.navbar ul li a .icon {
+	position: relative;
+	display: block;
+	min-width: 3.5rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	place-items: center;
+}
+
+.navbar ul li a .icon ion-icon {
+	font-style: 1.25rem;
+}
+
+.navbar ul li a .title {
+	position: relative;
+	display: block;
+	padding-left: 0.625rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	text-align: center;
+	white-space: normal;
+}
