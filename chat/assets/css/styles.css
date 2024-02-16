@@ -44,10 +44,6 @@ body {
 	border-bottom-left-radius: 1.25rem;
 }
 
-.navbar ul li.active:hover {
-	background: blanchedalmond;
-}
-
 .navbar ul li a {
 	position: relative;
 	display: flex;
@@ -57,7 +53,10 @@ body {
 	text-transform: capitalize;
 }
 
-.navbar ul li.active a:hover {
+.navbar ul li.active a {
+	border-top-left-radius: 1.25rem;
+	border-bottom-left-radius: 1.25rem;
+	background: blanchedalmond;
 	color: chocolate;
 }
 

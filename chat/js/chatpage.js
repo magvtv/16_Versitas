@@ -1,10 +1,9 @@
 let menulist = document.querySelectorAll('.menu-list');
 for (let i = 0; i < menulist.length; i++) {
 	menulist[i].addEventListener('mouseover', () => {
-		let j = 0;
-		while (j < menulist.length) {
-			menulist[j++].className = 'menu-list';
+		for (let j = 0; j < menulist.length; j++) {
+			menulist[j].classList.remove('active');
 		}
-		menulist[i].className = 'menu-list active';
+		menulist[i].classList.add('active');
 	});
 }
