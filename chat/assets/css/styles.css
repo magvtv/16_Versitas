@@ -6,6 +6,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Inconsolata', monospace;
+	font-size: 1rem;
+	color: black;
 }
 
 body {
@@ -14,29 +16,32 @@ body {
 
 .navbar {
 	position: fixed;
+	/* display: flex; */
 	top: 1.25rem;
 	left: 1.25rem;
 	bottom: 1.25rem;
-	width: 15rem;
+	width: 12rem;
 	border-radius: 0.625rem;
 	/* border-left: 0.3125rem solid green; */
 	box-sizing: initial;
 	background: rgb(109, 114, 114);
 	transition: width 0.5s;
+	overflow-x: hidden;
 }
 
 .navbar ul {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding-left: 0.625rem;
-	padding-top: 2.5rem;
+	padding-top: 1rem;
 }
 
-.navbar ul li {
+.menu-list {
 	position: relative;
 	list-style: none;
 	width: 100%;
@@ -44,7 +49,7 @@ body {
 	border-bottom-left-radius: 1.25rem;
 }
 
-.navbar ul li a {
+.menu-list a {
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -53,31 +58,58 @@ body {
 	text-transform: capitalize;
 }
 
-.navbar ul li.active a {
+.menu-list.active a {
 	border-top-left-radius: 1.25rem;
 	border-bottom-left-radius: 1.25rem;
 	background: blanchedalmond;
 	color: chocolate;
 }
 
-.navbar ul li a span.icon {
+.menu-list a span.icon {
 	position: relative;
-	min-width: 3.5rem;
-	height: 3.5rem;
-	line-height: 4rem;
-	padding-left: 0.625rem;
-	place-items: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2.5rem;
 }
 
-.navbar ul li a span.icon ion-icon {
+.menu-list a span.icon ion-icon {
 	font-size: 1.25rem;
 }
 
-.navbar ul li a span.title {
+.menu-list a span.title {
 	position: relative;
-	padding-left: 0.125rem;
-	height: 3.5rem;
-	line-height: 3.25rem;
-	text-align: center;
-	white-space: normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4rem;
+	/* display: none; */
+}
+
+.menu-list .account {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.toggle {
+	display: flex;
+	place-items: center;
+	position: fixed;
+	top: 1.25rem;
+	right: 1.25rem;
+	width: 3.125rem;
+	height: 3.125rem;
+	background-color: chartreuse;
+	border-radius: 0.625rem;
+	cursor: pointer;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+}
+.toggle:hover {
+	filter: brightness(95%);
+	transform: scale(1.1);
+}
+
+.toggle .active {
+	background-color: red;
 }

@@ -7,3 +7,8 @@ for (let i = 0; i < menulist.length; i++) {
 		menulist[i].classList.add('active');
 	});
 }
+
+let menuToggle = document.querySelector('.toggle');
+menuToggle.addEventListener('mouseover', () => {
+	menuToggle.classList.toggle('active');
+});
