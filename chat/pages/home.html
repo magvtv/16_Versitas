@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat Page | University Chat</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<div class="navbar">
+			<ul>
+				<li class="menu-list">
+					<a href="/chat/home">
+						<span class="icon"></span>
+						<span class="title">JKUAT</span>
+					</a>
+				</li>
+
+				<li class="menu-list">
+					<a href="/inbox">
+						<span class="icon">
+							<ion-icon name="mail-unread-outline"></ion-icon>
+						</span>
+						<span class="title">inbox</span>
+					</a>
+				</li>
+				<li class="menu-list active">
+					<a href="/direct">
+						<span class="icon">
+							<ion-icon name="chatbox-outline"></ion-icon>
+						</span>
+						<span class="title">group chat</span>
+					</a>
+				</li>
+				<li class="menu-list">
+					<a href="/notifications">
+						<span class="icon">
+							<ion-icon name="notifications-outline"></ion-icon>
+						</span>
+						<span class="title">notifications</span>
+					</a>
+				</li>
+				<li class="menu-list">
+					<a href="/settings">
+						<span class="icon">
+							<ion-icon name="settings-outline"></ion-icon>
+						</span>
+						<span class="title">settings</span>
+					</a>
+				</li>
+
+				<li class="menu-list account">
+					<a href="/logout">
+						<span class="icon">
+							<ion-icon name="walk-outline"></ion-icon>
+							<!-- for log in -->
+							<!-- <ion-icon name="person-outline"></ion-icon> -->
+						</span>
+						<span class="title">log out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="toggle active"></div>
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="./assets/js/chatpage.js"></script>
+	</body>
+</html>
