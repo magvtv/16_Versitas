@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	font-family: 'Inconsolata', monospace;
 	font-size: 1rem;
-	color: black;
+	/* color: black; */
 }
 
 body {
@@ -16,100 +16,106 @@ body {
 
 .navbar {
 	position: fixed;
-	/* display: flex; */
+	overflow: hidden;
+	display: flex;
 	top: 1.25rem;
 	left: 1.25rem;
 	bottom: 1.25rem;
-	width: 12rem;
+	width: 5rem;
 	border-radius: 0.625rem;
-	/* border-left: 0.3125rem solid green; */
 	box-sizing: initial;
 	background: rgb(109, 114, 114);
-	transition: width 0.5s;
+	transition: width 0.5s linear;
 	overflow-x: hidden;
+	z-index: 1000;
+
 }
 
-.navbar ul {
+.navbar:hover {
+	width: 250px;
+	overflow: visible;
+}
+
+.navbar > ul {
 	position: absolute;
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	display: flex;
+	justify-content: space-evenly;
 	top: 0;
 	left: 0;
-	width: 100%;
-	padding-left: 0.625rem;
-	padding-top: 1rem;
+	height: 100%;
+	margin-left: 0.75rem;
 }
+
+.icon {
+	position: relative;
+	display: table-cell;
+	width: 40px;
+	height: 20px;
+}
+
 
 .menu-list {
 	position: relative;
+	display: flex;
+	place-items: center center;
 	list-style: none;
-	width: 100%;
+	width: 250px;
 	border-top-left-radius: 1.25rem;
 	border-bottom-left-radius: 1.25rem;
 }
 
-.menu-list a {
+.menu-list > a {
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 0;
 	position: relative;
-	display: flex;
 	width: 100%;
 	text-decoration: none;
 	color: white;
 	text-transform: capitalize;
+	transform: translateZ(0) scale(1, 1);
+	transition: all 0.1s linear;
+	
 }
 
-.menu-list.active a {
+.menu-list.active {
 	border-top-left-radius: 1.25rem;
 	border-bottom-left-radius: 1.25rem;
-	background: blanchedalmond;
-	color: chocolate;
+	color: blanchedalmond;
+	background: chocolate;
 }
 
-.menu-list a span.icon {
+.menu-list .icon {
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 2.5rem;
+	display: table-cell;
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
 }
 
-.menu-list a span.icon ion-icon {
+.icon ion-icon {
 	font-size: 1.25rem;
 }
 
-.menu-list a span.title {
+.title {
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 4rem;
-	/* display: none; */
+	display: table-cell;
+	vertical-align: middle;
+	/* display: flex; */
+	/* flex-direction: row; */
+	/* border: 2px solid red;	 */
+	text-align: center;
+	margin-top: 10px;
 }
 
 .menu-list .account {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
 }
 
-.toggle {
-	display: flex;
-	place-items: center;
-	position: fixed;
-	top: 1.25rem;
-	right: 1.25rem;
-	width: 3.125rem;
-	height: 3.125rem;
-	background-color: chartreuse;
-	border-radius: 0.625rem;
-	cursor: pointer;
-	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-}
-.toggle:hover {
-	filter: brightness(95%);
-	transform: scale(1.1);
-}
-
-.toggle .active {
-	background-color: red;
-}

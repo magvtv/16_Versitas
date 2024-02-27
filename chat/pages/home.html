@@ -4,11 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Chat Page | University Chat</title>
-		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="../assets/css/styles.css" />
 	</head>
 	<body>
 		<div class="navbar">
 			<ul>
+				<!-- top home icon -->
 				<li class="menu-list">
 					<a href="/chat/home">
 						<span class="icon"></span>
@@ -16,6 +17,7 @@
 					</a>
 				</li>
 
+				<!-- direct messages -->
 				<li class="menu-list">
 					<a href="/inbox">
 						<span class="icon">
@@ -24,15 +26,19 @@
 						<span class="title">inbox</span>
 					</a>
 				</li>
-				<li class="menu-list active">
-					<a href="/direct">
+
+				<!-- group chat messages -->
+				<li class="menu-list">
+					<a href="/group-chat">
 						<span class="icon">
 							<ion-icon name="chatbox-outline"></ion-icon>
 						</span>
 						<span class="title">group chat</span>
 					</a>
 				</li>
-				<li class="menu-list">
+
+				<!-- notifications -->
+				<li class="menu-list active">
 					<a href="/notifications">
 						<span class="icon">
 							<ion-icon name="notifications-outline"></ion-icon>
@@ -40,6 +46,8 @@
 						<span class="title">notifications</span>
 					</a>
 				</li>
+
+				<!-- settings  -->
 				<li class="menu-list">
 					<a href="/settings">
 						<span class="icon">
@@ -49,6 +57,7 @@
 					</a>
 				</li>
 
+				<!-- log out  -->
 				<li class="menu-list account">
 					<a href="/logout">
 						<span class="icon">
