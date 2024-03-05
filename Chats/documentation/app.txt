@@ -1,0 +1,24 @@
+what is the basis of creating this chat application?
+- lecturer student communication
+- abstract contact information on both ends
+- have student names and registration numbers by default
+- have the lecturer and course content by default
+- solely focused on bridging the gap between students and lectuers
+- compatible with any given campus/university/college
+
+
+
+BORROW IDEAS:
+1. how piazza works
+2. 
+
+features
+- resource repository (for the course contents)
+- chat interface (cohort with different lecturers)
+- one on one communication (text based for a start)
+
+LECTURERS:
+- 
+
+STUDENTS:
+

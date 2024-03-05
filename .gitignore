@@ -1,1 +1,27 @@
-App/Overview/university.yaml
+app/overview/*.yaml
+
+
+# Logs
+Chats/serverless-chat/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+Chats/serverless-chat/node_modules/
+Chats/serverless-chat/dist
+Chats/serverless-chat/dist-ssr
+*.local
+
+# Editor directories and files
+Chats/serverless-chat/.vscode/*
+Chats/serverless-chat/!.vscode/extensions.json
+Chats/serverless-chat/.idea
+Chats/serverless-chat/.DS_Store
+Chats/serverless-chat/*.suo
+Chats/serverless-chat/*.ntvs*
+Chats/serverless-chat/*.njsproj
+Chats/serverless-chat/*.sln
+Chats/serverless-chat/*.sw?
