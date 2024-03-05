@@ -10,9 +10,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-chat/verless-chat/node_modules/
-chat/verless-chat/dist
-chat/verless-chat/dist-ssr
+chat/serverless-chat/node_modules/
+chat/serverless-chat/dist
+chat/serverless-chat/dist-ssr
 *.local
 
 # Editor directories and files
