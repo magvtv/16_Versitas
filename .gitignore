@@ -1,8 +1,8 @@
 app/overview/*.yaml
-# chat/ancient/
+
 
 # Logs
-serverless-chat/logs
+chat/serverless-chat/logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -10,18 +10,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-serverless-chat/node_modules/
-serverless-chat/dist
-serverless-chat/dist-ssr
+chat/verless-chat/node_modules/
+chat/verless-chat/dist
+chat/verless-chat/dist-ssr
 *.local
 
 # Editor directories and files
-serverless-chat/.vscode/*
-serverless-chat/!.vscode/extensions.json
-serverless-chat/.idea
-serverless-chat/.DS_Store
-serverless-chat/*.suo
-serverless-chat/*.ntvs*
-serverless-chat/*.njsproj
-serverless-chat/*.sln
-serverless-chat/*.sw?
+chat/serverless-chat/.vscode/*
+chat/serverless-chat/!.vscode/extensions.json
+chat/serverless-chat/.idea
+chat/serverless-chat/.DS_Store
+chat/serverless-chat/*.suo
+chat/serverless-chat/*.ntvs*
+chat/serverless-chat/*.njsproj
+chat/serverless-chat/*.sln
+chat/serverless-chat/*.sw?
