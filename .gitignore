@@ -12,6 +12,7 @@ lerna-debug.log*
 
 Chats/serverless-chat/node_modules/
 Chats/serverless-chat/dist
+Chats/serverless-chat/.env
 Chats/serverless-chat/dist-ssr
 *.local
 
